@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution in Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-tailwind-css-1jGQHxp62W)
+- Live Site URL: [See my solution running](https://age-calculator-pm9hgmvl6-nascimentolds.vercel.app/)
 
 ## My process
 
@@ -55,7 +55,7 @@ Users should be able to:
 
 ### What I learned
 
-It was the first time I used Tailwind CSS. Despite being a small project I could see how intuitive and practical it is to use this library.
+It was the first time I used Tailwind CSS. Despite being a small project I could see how intuitive and practical is using this library.
 
 
 ## Author

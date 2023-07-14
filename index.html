@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "#ffffff",
+              offWhite: "#f0f0f0",
+              lightGrey: "#dbdbdb",
+              smokeyGrey: "#716f6f",
+              offBlack: "#141414",
+              purple: "#854dff",
+              lightRed: "#ff5757",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body class="bg-offWhite m-0 p-0 box-border no-underline cursor-pointer">
+    <div
+      class="bg-white w-72 sm:w-auto sm:max-w-lg sm:mt-20 mt-16 p-4 sm:p-9 m-auto rounded-2xl rounded-br-[25%]"
+    >
+      <form id="form">
+        <div class="flex justify-between mt-4 sm:m-0 sm:w-3/4">
+          <span class="flex flex-col">
+            <label
+              for="day"
+              class="flex-1 text-smokeyGrey font-poppins text-[10px]/[20px] sm:text-[9px]/[20px] tracking-[0.2em]"
+              >DAY</label
+            >
+            <input
+              type="number"
+              id="day"
+              placeholder="DD"
+              class="flex-1 border border-lightGrey rounded-md p-2 w-[75px] sm:w-24 sm:text-lg font-poppins focus:outline-none focus:border-purple focus:ring-0"
+            />
+          </span>
+          <span class="flex flex-col">
+            <label
+              for="month"
+              class="flex-1 text-smokeyGrey font-poppins text-[10px]/[20px] sm:text-[9px]/[20px] tracking-[0.2em]"
+              >MONTH</label
+            >
+            <input
+              type="number"
+              id="month"
+              placeholder="MM"
+              class="flex-1 border border-lightGrey rounded-md p-2 w-[75px] sm:w-24 sm:text-lg font-poppins focus:outline-none focus:border-purple focus:ring-0"
+            />
+          </span>
+          <span class="flex flex-col">
+            <label
+              for="year"
+              class="flex-1 text-smokeyGrey font-poppins text-[10px]/[20px] sm:text-[9px]/[20px] tracking-[0.2em]"
+              >YEAR</label
+            >
+            <input
+              type="number"
+              id="year"
+              placeholder="YYYY"
+              class="flex-1 border border-lightGrey rounded-md p-2 w-[75px] sm:w-24 sm:text-lg font-poppins focus:outline-none focus:border-purple focus:ring-0"
+            />
+          </span>
+        </div>
+        <div
+          class="flex justify-between sm:w-3/4 font-poppins text-[6pt] italic text-lightRed"
+        >
+          <span id="erroDay" class="w-[83px] sm:w-24"></span>
+          <span id="erroMonth" class="w-[83px] sm:w-24"></span>
+          <span id="erroYear" class="w-[83px] sm:w-24"></span>
+        </div>
+        <div class="mt-12 sm:mt-8 text-center">
+          <hr />
+          <button
+            id="submit"
+            type="submit"
+            class="relative bottom-6 sm:left-48 bg-purple rounded-full p-4 hover:bg-offBlack transition"
+          >
+            <img
+              class="w-5 sm:w-6"
+              src="/assets/images/icon-arrow.svg"
+              alt="icon"
+            />
+          </button>
+        </div>
+      </form>
+      <div
+        class="flex flex-col font-poppins text-[2.9rem]/[3rem] sm:text-[4rem]/[4rem] sm:m-0 italic font-bold mb-6"
+      >
+        <span>
+          <span id="years" class="text-purple">--</span>
+          <span>years</span>
+        </span>
+        <span>
+          <span id="months" class="text-purple">--</span>
+          <span>months</span>
+        </span>
+        <span>
+          <span id="days" class="text-purple">--</span>
+          <span>days</span>
+        </span>
+      </div>
+    </div>
+
+    <script src="js/validate.js"></script>
+  </body>
+</html>

@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution in Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-tailwind-css-1jGQHxp62W)
+- Solution URL: [My solution on Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-tailwind-css-1jGQHxp62W)
 - Live Site URL: [See my solution running](https://age-calculator-pm9hgmvl6-nascimentolds.vercel.app/)
 
 ## My process
